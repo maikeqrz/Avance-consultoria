@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 62.5%;
+    --color-button: #EE6B41;
+    --color-linha: #8A68A2;
+}
+
+header {
+    background-color: var(--color-linha);
+    display: flex;
+}
+header img {
+padding-left: 5rem;
+}
+header section {
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    gap: 1.5rem;
+}
+header section a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+header #btn {
+    background-color: var(--color-button);
+    color: white;
+    padding: .2rem;
+    border-radius: .5rem;
+} 
