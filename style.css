@@ -147,6 +147,11 @@ section {
     position: relative;
 }
 
+.carousel {
+    width: 80vw;
+    height: auto;
+}
+
 @media(max-width: 768px) {
     #navbar-icon {
         display: block;
