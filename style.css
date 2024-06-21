@@ -9,7 +9,9 @@
 
 :root { 
     --main-color: #924070;
-    --main-color2: #EE6B41;
+    --second-color: #EE6B41;
+    --third-color: #F89E24;
+
 
     --big-font: 4.5rem; 
     --h2-font: 3.2rem;
@@ -26,11 +28,14 @@
     }
 }
 
+ul {
+    margin-bottom: 0;
+}   
+
 .title.active-title h1::after {
     display: block;
     animation: loadLine 1s forwards;
 }
-
 
 .title h1 {
     width: fit-content; 
@@ -44,7 +49,7 @@
     width: 50%; 
     height: 5px;
     border-radius: 10px;
-    background-color: var(--main-color);
+    background-color: var(--third-color);
 }   
 
 header {
@@ -58,7 +63,6 @@ header {
 }
 
 section {
-/*     border: 1px red solid;  */ 
     min-height: 90vh;
     max-width: 100vw;
     margin: 0 auto;
@@ -70,6 +74,11 @@ section {
     z-index: 11;
     cursor: pointer;
     display: none;
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
 }
 
 .logo-link img {
@@ -86,11 +95,10 @@ section {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 } */
 
-.nav-list {
+.nav-list { 
     display: flex;
     list-style: none;   
     gap: 4rem;
-    
 }
 
 .nav-list a {
@@ -138,18 +146,23 @@ section {
 }
 
 /* HOME-SECTION */
-
-.home-sec {        
-    background-image: url('./assets/svgviewer-png-output.png');
-    background-size: 100% 100%;     
-    background-position: center;    
-    margin: 0;
-    position: relative;
+.home-sec {
+    display: flex;
+    justify-content: center;
 }
 
 .carousel {
     width: 80vw;
     height: auto;
+}
+
+.aa-sec {
+    border: 1px red solid;  
+    background-image: url('./assets/wave.png');
+    background-size: 100% 100%;     
+    background-position: center;    
+    margin-top: 10%;
+    position: relative;
 }
 
 @media(max-width: 768px) {
