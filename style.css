@@ -58,7 +58,7 @@ header {
     top: 0;
     right: 0;
     z-index: 10;
-    background: white;
+    background: transparent;
     padding: 10px;
 }
 
@@ -148,10 +148,11 @@ section {
 /* HOME-SECTION */
 .home-sec {
     border: 1px solid red;
-    background-image: url('./assets/svgviewer-png-output.png');
+    background-image: url('./assets/wave-section.png');
     background-size: 100% 100%;     
     background-position: center;    
-    margin-top: 10%;
+    
+        margin-top: 10%;
     position: relative;
 }
 
