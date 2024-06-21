@@ -147,8 +147,12 @@ section {
 
 /* HOME-SECTION */
 .home-sec {
-    display: flex;
-    justify-content: center;
+    border: 1px solid red;
+    background-image: url('./assets/svgviewer-png-output.png');
+    background-size: 100% 100%;     
+    background-position: center;    
+    margin-top: 10%;
+    position: relative;
 }
 
 .carousel {
@@ -157,12 +161,8 @@ section {
 }
 
 .aa-sec {
-    border: 1px red solid;  
-    background-image: url('./assets/wave.png');
-    background-size: 100% 100%;     
-    background-position: center;    
-    margin-top: 10%;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 @media(max-width: 768px) {
