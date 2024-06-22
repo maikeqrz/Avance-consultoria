@@ -63,7 +63,7 @@ header {
 }
 
 section {
-    min-height: 90vh;
+    min-height: 100vh;
     max-width: 100vw;
     margin: 0 auto;
     padding-top: 150px; 
@@ -74,6 +74,7 @@ section {
     z-index: 11;
     cursor: pointer;
     display: none;
+
 }
 
 .logo-link {
@@ -83,6 +84,11 @@ section {
 
 .logo-link img {
     width: 80%;
+    transition: ease .30s;
+}
+
+.logo-link img:hover {
+    transform: scale(1.2);
 }
 
 .main-nav {
@@ -91,9 +97,14 @@ section {
     justify-content: space-evenly;
 }
 
-/* .sticky {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-} */
+.sticky {
+    background: rgba(31, 27, 27, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .nav-list { 
     display: flex;
@@ -103,7 +114,7 @@ section {
 
 .nav-list a {
     font-size: var(--p-font);
-    color: var(--main-color);
+    color: white;
     font-size: var(--p-font);
     padding: 10px 20px;
 }
@@ -148,12 +159,41 @@ section {
 /* HOME-SECTION */
 .home-sec {
     border: 1px solid red;
-    background-image: url('./assets/wave-section.png');
+    background-image: url('./assets/wave-section.png'); /* no-repeat center/cover; */
     background-size: 100% 100%;     
     background-position: center;    
-    
-        margin-top: 10%;
     position: relative;
+}
+
+.a {
+    display: flex;
+    padding: 0 10%;
+}
+
+.text {
+    color: white;
+    margin-top: 10%;
+}
+
+.text span {
+    font-weight: bold;
+    color: #924070;
+}
+
+.text button {
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: ease .30s;
+}
+
+.text button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.425);
 }
 
 .carousel {
