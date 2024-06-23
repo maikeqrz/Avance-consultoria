@@ -9,7 +9,9 @@
 
 :root { 
     --main-color: #924070;
-    --main-color2: #EE6B41;
+    --second-color: #EE6B41;
+    --third-color: #F89E24;
+
 
     --big-font: 4.5rem; 
     --h2-font: 3.2rem;
@@ -26,11 +28,14 @@
     }
 }
 
+ul {
+    margin-bottom: 0;
+}   
+
 .title.active-title h1::after {
     display: block;
     animation: loadLine 1s forwards;
 }
-
 
 .title h1 {
     width: fit-content; 
@@ -44,7 +49,7 @@
     width: 50%; 
     height: 5px;
     border-radius: 10px;
-    background-color: var(--main-color);
+    background-color: var(--third-color);
 }   
 
 header {
@@ -53,13 +58,12 @@ header {
     top: 0;
     right: 0;
     z-index: 10;
-    background: white;
+    background: transparent;
     padding: 10px;
 }
 
 section {
-/*     border: 1px red solid;  */ 
-    min-height: 90vh;
+    min-height: 100vh;
     max-width: 100vw;
     margin: 0 auto;
     padding-top: 150px; 
@@ -70,10 +74,21 @@ section {
     z-index: 11;
     cursor: pointer;
     display: none;
+
+}
+
+.logo-link {
+    display: flex;
+    justify-content: center;
 }
 
 .logo-link img {
     width: 80%;
+    transition: ease .30s;
+}
+
+.logo-link img:hover {
+    transform: scale(1.2);
 }
 
 .main-nav {
@@ -82,20 +97,24 @@ section {
     justify-content: space-evenly;
 }
 
-/* .sticky {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-} */
+.sticky {
+    background: rgba(31, 27, 27, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
-.nav-list {
+.nav-list { 
     display: flex;
     list-style: none;   
     gap: 4rem;
-    
 }
 
 .nav-list a {
     font-size: var(--p-font);
-    color: var(--main-color);
+    color: white;
     font-size: var(--p-font);
     padding: 10px 20px;
 }
@@ -138,18 +157,53 @@ section {
 }
 
 /* HOME-SECTION */
-
-.home-sec {        
-    background-image: url('./assets/svgviewer-png-output.png');
+.home-sec {
+    border: 1px solid red;
+    background-image: url('./assets/wave-section.png'); /* no-repeat center/cover; */
     background-size: 100% 100%;     
     background-position: center;    
-    margin: 0;
     position: relative;
+}
+
+.a {
+    display: flex;
+    padding: 0 10%;
+}
+
+.text {
+    color: white;
+    margin-top: 10%;
+}
+
+.text span {
+    font-weight: bold;
+    color: #924070;
+}
+
+.text button {
+    background-color: var(--main-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: ease .30s;
+}
+
+.text button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.425);
 }
 
 .carousel {
     width: 80vw;
     height: auto;
+}
+
+.aa-sec {
+    display: flex;
+    justify-content: center;
 }
 
 @media(max-width: 768px) {
