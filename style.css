@@ -267,3 +267,88 @@ header #btn {
     padding: .2rem;
     border-radius: .5rem;
 }  */
+
+
+/* Sobre o trabalho */
+
+.sobre-trabalho{
+    height: 100vh;
+    background-image: url('./assets/wave.png'); /* no-repeat center/cover; */
+    background-size: 100% 100%;     
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;  
+    gap: 50px;
+    position: relative;
+    gap: 50px;
+}
+
+.sobre-trabalho-tilte{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#barra{
+    width: 60%;
+    height: 8px;
+    background-color: #F89E24;
+
+}
+
+.container-sobre-trabalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+     
+}
+
+.bloco-trabalho{
+    width:200px;
+    border-radius: 20px;
+    height: 120px;
+    background-color: #924070;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloco-trabalho h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    
+}
+
+.ceta{
+    background-color: #924070;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.img-sobre-trabalho{
+    background-color: #F26457;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    
+}
