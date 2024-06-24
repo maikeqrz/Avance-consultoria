@@ -37,17 +37,12 @@ ul {
     animation: loadLine 1s forwards;
 }
 
-.title h1 {
-    width: fit-content; 
-    margin: 0 auto;
-    text-align: center;
-}
-
 .title h1::after {
     content: '';
     display: none;
-    width: 50%; 
+    width: 50%;
     height: 5px;
+    margin-left: 25%;
     border-radius: 10px;
     background-color: var(--third-color);
 }   
@@ -243,31 +238,6 @@ section {
         font-size: medium;
     }
 }
-/* header {
-    background-color: var(--color-linha);
-    display: flex;
-}
-header img {
-padding-left: 5rem;
-}
-header section {
-    margin: auto;
-    justify-content: center;
-    display: flex;
-    gap: 1.5rem;
-}
-header section a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-}
-header #btn {
-    background-color: var(--color-button);
-    color: white;
-    padding: .2rem;
-    border-radius: .5rem;
-}  */
-
 
 /* Sobre o trabalho */
 
@@ -285,20 +255,6 @@ header #btn {
     gap: 50px;
 }
 
-.sobre-trabalho-tilte{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
- 
-#barra{
-    width: 60%;
-    height: 8px;
-    background-color: #F89E24;
-
-}
 
 .container-sobre-trabalho{
     display: flex;
@@ -330,14 +286,17 @@ header #btn {
 }
 
 .ceta{
-    background-color: #924070;
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;        
+    width: 50px;
+    height: 50px;
+    margin-top: 12%;
+    border-radius: 50%;
+    background: var(--main-color);
+    font-size: x-large;
     color: white;
+    transition: ease .50s;
 }
 
 .img-sobre-trabalho{
