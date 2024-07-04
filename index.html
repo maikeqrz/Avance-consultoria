@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;700&display=swap" rel="stylesheet">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -30,16 +31,15 @@
 <body>
     <header>
         <nav class="main-nav">
-            <div class="fa-solid fa-bars" id="navbar-icon"></div>
-            
             <a href="#home-sec" class="logo-link">
-                <img src="./assets/logo.png" alt="Logo-Avance">
+                <img src="./assets/logo-2.svg" alt="Logo-Avance">
             </a>
+            <div class="fa-solid fa-bars" id="navbar-icon"></div>
 
             <ul class="nav-list">
+                <li><a href="#about-sec" class="nav-link">Sobre</a></li>
                 <li><a href="#home-sec" class="nav-link">Evento</a></li>
-                <li><a href="#aa-sec" class="nav-link">Evento</a></li>
-                <li><a href="#about" class="nav-link">Evento</a></li>
+                <li><a href="#" class="nav-link">Evento</a></li>
                 <li><a href="#contact" class="nav-link">Contato</a></li>
             </ul>
 
@@ -49,13 +49,19 @@
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-youtube"></i></a>
             </div>
+
+            
         </nav>
     </header>
 
     <section class="home-sec" id="home-sec">
       <div class="a">
         <div class="text">
-          <h1>Prepare-se para <span>impulsionar</span> sua empresa para o próximo nível</h1>
+          <h1>Apenas <span>AVANCE!</span></h1>
+          <br>
+          <h1>
+            O futuro pertence àqueles que ousam avançar em direção a realização.
+          </h1>
 
           <button href="#contact">Entre em contato conosco</button>
         </div>
@@ -65,6 +71,12 @@
         </div>
       </div>
     </section>  
+
+    <section class="about-sec" id="about-sec">
+      <div class="title active-title">
+        <h1>Sobre a Avance</h1>
+      </div>
+    </section>
 
     <section class="aa-sec" id="aa-sec">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="5000">
@@ -150,6 +162,9 @@
       </div>
       <p class="footer__copy">@Copyright - Avance</p>
     </footer>
-    
+
+    <!-- SCROLLREVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
