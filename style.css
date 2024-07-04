@@ -107,6 +107,15 @@ section {
     gap: 4rem;
 }
 
+.imgdela {
+    position: absolute;
+    top: 50%;
+    right: 33%;
+}
+.imgdela > img {
+    width: 600px;
+}
+
 .nav-list a {
     font-size: var(--p-font);
     color: white;
