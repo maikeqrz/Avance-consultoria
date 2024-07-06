@@ -1,4 +1,5 @@
 const menu = document.querySelector('#navbar-icon');
+const navlist = document.querySelector('.nav-list')
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navlist.classList.toggle('active');
@@ -37,9 +38,7 @@ window.addEventListener('scroll', function() {
     });
 });
 
-window.addEventListener('resize', function() {
-    setActiveTab();
-});
+
 
 /* function setActiveTab() {
     var scrollPosition = window.scrollY;
