@@ -68,6 +68,9 @@ const sr = ScrollReveal({
     reset: true
 });
 
-//const homeText = document.querySelector('.texto')
+/* ANIMATIONS HOME */
 sr.reveal('.text', {origin:'left'});
 sr.reveal('.imgdela', {origin:'right'});
+
+/* ANI. SEC2 */
+sr.reveal('.about-content', {origin:'bottom', duration: 1000});
