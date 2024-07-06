@@ -183,7 +183,7 @@ section {
 
 /* HOME-SECTION */
 .home-sec {
-    background-image: url('./assets/Wave.png'); /* no-repeat center/cover; */
+    background-image: url('./assets/wave.png'); /* no-repeat center/cover; */
     background-size: 100% 100%;     
     background-position: center;    
     position: relative;
@@ -222,6 +222,7 @@ section {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.425);
 }
 
+/* ABOUT-SEC */
 .about-sec {
     display: flex;
     flex-direction: row;
@@ -238,7 +239,6 @@ section {
     gap: 10%;
     padding-top: 150px; 
 }
-
   
 .about-content {
     flex: 1;
@@ -283,8 +283,10 @@ section {
 }
 
 .aa-sec {
-    display: flex;
-    justify-content: center;
+    background-image: url('./assets/wave-2.png'); /* no-repeat center/cover; */
+    background-size: 100% 100%;     
+    background-position: center;    
+    position: relative;
 }
 
 /* Sobre o trabalho */
