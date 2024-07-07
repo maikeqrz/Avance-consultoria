@@ -69,8 +69,8 @@ const sr = ScrollReveal({
 });
 
 /* ANIMATIONS HOME */
-sr.reveal('.text', {origin:'left'});
-sr.reveal('.imgdela', {origin:'right'});
+sr.reveal('.home-text', {origin:'left'});
+sr.reveal('.home-img', {origin:'right'});
 
 /* ANI. SEC2 */
 sr.reveal('.about-content', {origin:'bottom', duration: 1000});
