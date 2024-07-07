@@ -74,3 +74,7 @@ sr.reveal('.imgdela', {origin:'right'});
 
 /* ANI. SEC2 */
 sr.reveal('.about-content', {origin:'bottom', duration: 1000});
+
+sr.reveal('.c1', {origin:'bottom', duration: 1000});
+sr.reveal('.c2', {origin:'bottom', duration: 1500});
+sr.reveal('.c3', {origin:'bottom', duration: 3000});

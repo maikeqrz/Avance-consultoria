@@ -140,7 +140,7 @@ section {
     height: 0.16rem;
     bottom: 9px;
     left: 25%;
-    background-color: var(--third-color);
+    background-color: var(--main-color);
     transition: width ease 0.80s;
 }
 
@@ -193,6 +193,17 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
+    align-items: center;
+}
+.sec-2 {
+    width: 80%;
+    gap: 10%;
+    padding-top: 150px; 
+}
+.sec-3 {
+    max-width: 100vw;
+    margin-top: 5%;
+    flex-direction: column;
 }
 
 .home-text {
@@ -231,15 +242,6 @@ section {
 /*     padding: 0 20px; */
 }
   
-.container-2 {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    gap: 10%;
-    padding-top: 150px; 
-}
-  
 .about-content {
     flex: 1;
     padding: 20px;
@@ -266,9 +268,98 @@ section {
     box-shadow: 0 2px 5px rgb(146, 64, 112);
 }
   
+/* SOBRE JOB */
+.sobre-trabalho {
+    background-image: url('./assets/wave-2.png'); /* no-repeat center/cover; */
+    background-size: 100% 100%;     
+    background-position: center;    
+    position: relative;
+}
+.sobre-trabalho .title {
+    margin-bottom: 100px;
+    color: white;
+}
+
+.card-box {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 20px;
+}
+  
+.card {
+    max-width: 400px; 
+    margin: 0 35px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: wheat;
+    transition: ease .50s;
+}
+
+.card:hover {
+    color: var(--bg-color);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.514);
+    transform: scale(1.1);
+}
+
+.card-circle {
+    position: absolute;
+    top: -55px;
+    left: calc(50% - 40px);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.card-circle i {
+    font-size: 20px;
+    color: white;
+}
+  
+.card-title {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+  
+.card h2 {
+    color: white;
+    margin: 0; 
+    font-size: 1.8rem; 
+    font-weight: bold; 
+}
+  
+.card-content {
+    text-align: center;
+    padding: 20px;
+}
+  
+.card-content ul {
+    margin-left: 30px;
+    font-size: 1rem; 
+    text-align: left;
+    line-height: 1.6;
+    color: #333;
+}
+  
+@media (max-width: 768px) {
+    .card-box {
+        flex-direction: column;
+    }
+    .card {
+        width: 100%
+    }
+}
+
 @media (max-width: 768px) {
     .container {
-        flex-direction: column; /* Muda para layout em coluna em telas menores */
+        flex-direction: column;
     }
     .about-image {
         width: 100%;
@@ -277,87 +368,6 @@ section {
 }
 
 
-.carousel {
-    width: 80vw;
-    height: auto;
-}
-
-.aa-sec {
-    background-image: url('./assets/wave-2.png'); /* no-repeat center/cover; */
-    background-size: 100% 100%;     
-    background-position: center;    
-    position: relative;
-}
-
-/* Sobre o trabalho */
-
-.sobre-trabalho{
-    height: 100vh;
-    background-image: url('./assets/Wave.png'); /* no-repeat center/cover; */
-    background-size: 100% 100%;     
-    background-position: center; 
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;  
-    gap: 50px;
-    position: relative;
-    gap: 50px;
-}
-
-.container-sobre-trabalho{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    position: relative;
-     
-}
-
-.bloco-trabalho{
-    width:200px;
-    border-radius: 20px;
-    height: 120px;
-    background-color: #924070;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.bloco-trabalho h2{
-    font-size: 16px;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    margin-top: 40px; 
-}
-
-.ceta{
-    display: flex;
-    align-items: center;
-    justify-content: center;        
-    width: 50px;
-    height: 50px;
-    margin-top: 12%;
-    border-radius: 50%;
-    background: var(--main-color);
-    font-size: x-large;
-    color: white;
-    transition: ease .50s;
-}
-
-.img-sobre-trabalho{
-    background-color: #F26457;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -20px;
-}
 
 .site-footer {
     display: flex;
