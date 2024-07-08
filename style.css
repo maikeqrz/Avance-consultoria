@@ -1,14 +1,14 @@
-
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Montserrat Alternates", sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
     scroll-behavior: smooth;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 a {
+    text-decoration: none;
     text-decoration: transparent; 
     color: inherit;
 }
@@ -39,9 +39,11 @@ ul {
 }   
 
 .title {
-    font-family: "Montserrat Alternates", sans-serif;
     display: inline-block;
     margin-bottom: 3%;
+}
+.title h1{
+    font-family: "Montserrat Alternates", sans-serif
 }
 .title h1::after {
     content: '';
@@ -71,7 +73,7 @@ header {
 section {
     min-height: 100vh;
     max-width: 100vw;
-    padding-top: 150px; 
+    padding-top: 100px; 
 }
 
 #navbar-icon {
@@ -119,6 +121,10 @@ section {
     font-size: var(--p-font);
     color: var(--main-color);
     padding: 10px 20px;
+}
+
+.nav-list a:hover {
+    color: var(--main-color);
 }
 
 .nav-list li {  
@@ -195,6 +201,7 @@ section {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    padding-top: 50px;
 }
 .sec-2 {
     width: 80%;
@@ -226,11 +233,11 @@ section {
     margin: 100px 100px;
     font-weight: bold;
     transition: ease .30s;
-    text-decoration: none;
 }
 
 .home-text a:hover {
-    transform: scale(1.1);
+    color: #FFFFFF;
+    scale: 1.1;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.425);
 }
 
@@ -283,25 +290,26 @@ section {
 
 .card-box {
     display: flex; 
-    flex-wrap: wrap; 
+    flex-wrap:  nowrap; 
     justify-content: center; 
     align-items: flex-start; 
     padding: 20px;
 }
   
-.card {
-    max-width: 400px; 
+.cardd {
+    width: 400px; 
+    height: 400px;
     margin: 0 35px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     background-color: wheat;
-    transition: ease .50s;
+    transition: ease .30s;
 }
 
-.card:hover {
+.card-box .cardd:hover {
+    scale: 1.1;
     color: var(--bg-color);
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.514);
-    transform: scale(1.1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.425);
 }
 
 .card-circle {
@@ -338,7 +346,6 @@ section {
   
 .card-content {
     text-align: center;
-    padding: 20px;
 }
   
 .card-content ul {
@@ -368,13 +375,52 @@ section {
     }
 }
 
+.services {
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-control-prev {
+  width: 30px;
+  height: 30px;
+  padding: 0 5px; 
+  top: 50%;
+  transform: translateY(-50%);
+  left: 200px;
+}
+
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  padding: 0 5px; 
+  top: 50%;
+  transform: translateY(-50%);
+  right: 200px;
+}
+
+.carousel button {
+    width: 100px;
+    height: auto;
+    background: var(--main-color);
+}
+
 .carousel-card-box {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 0.1fr);
+    grid-template-rows: repeat(2, 0.1fr);
+    gap: 30px;
     padding: 20px;
-    border: 1px red solid;
 }
 
 .site-footer {
