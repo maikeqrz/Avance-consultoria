@@ -78,3 +78,35 @@ sr.reveal('.about-content', {origin:'bottom', duration: 1000});
 sr.reveal('.c1', {origin:'bottom', duration: 1000});
 sr.reveal('.c2', {origin:'bottom', duration: 1500});
 sr.reveal('.c3', {origin:'bottom', duration: 3000});
+
+const carouselContainer = document.querySelector('.carousel-container');
+const cardGroups = document.querySelectorAll('.card-group');
+const prevButton = document.querySelector('.prev-button-left');
+const nextButton = document.querySelector('.prev-button-right');
+
+let currentGroup = 0;
+
+function updateCarousel() {
+  const translateX = -currentGroup * (cardGroups[0].offsetWidth + 20);
+  carouselContainer.style.transform = `translateX(${translateX}px)`;
+}
+
+prevButton.addEventListener('click', () => {
+  currentGroup--;
+  if (currentGroup < 0) {
+    currentGroup = cardGroups.length - 1;
+  }
+  updateCarousel();
+});
+
+nextButton.addEventListener('click', () => {
+  currentGroup++;
+  if (currentGroup >= cardGroups.length) {
+    currentGroup = 0;
+  }
+  updateCarousel();
+});
+
+updateCarousel();
+
+updateCarousel();

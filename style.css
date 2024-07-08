@@ -1,3 +1,4 @@
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -367,7 +368,14 @@ section {
     }
 }
 
-
+.carousel-card-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    border: 1px red solid;
+}
 
 .site-footer {
     display: flex;
