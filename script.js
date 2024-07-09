@@ -73,8 +73,10 @@ sr.reveal('.home-text', {origin:'left'});
 sr.reveal('.home-img', {origin:'right'});
 
 /* ANI. SEC2 */
-sr.reveal('.about-content', {origin:'bottom', duration: 1000});
+sr.reveal('.about-content', {origin:'bottom', duration: 2000});
 
 sr.reveal('.c1', {origin:'bottom', duration: 1000});
 sr.reveal('.c2', {origin:'bottom', duration: 1500});
 sr.reveal('.c3', {origin:'bottom', duration: 3000});
+
+sr.reveal('.services-content p', {origin:'bottom', duration: 2000});
