@@ -196,6 +196,9 @@ section {
     position: relative;
 }
 
+.home-sec .btn-a {
+    display: flex;
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -230,7 +233,6 @@ span {
     color: #FFFFFF;
     padding: 10px 20px;
     border-radius: 18px;
-    margin: 100px 100px;
     font-weight: bold;
     transition: ease .30s;
 }
@@ -432,8 +434,8 @@ textarea {
 }
   
 .footer-bottom {
+    height: 350px;
     display: flex;
-    flex-wrap: wrap;
 }
   
 .contact-info {
@@ -443,10 +445,20 @@ textarea {
     background: white;
     border-radius: 18px;
 }
+
+.contact-info i {
+    font-size: 40px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+  
   
 .footer-text {
     width: 50%;
-    height: 420px;
     padding: 15px;
     border-radius: 18px;
 }
@@ -471,9 +483,6 @@ textarea {
     width: 50%;
     margin-bottom: 20px;
 }
-
-
-
 
 @media(max-width: 768px) {
     #navbar-icon {
