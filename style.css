@@ -251,6 +251,7 @@ span {
 }
   
 .about-content {
+    color: var(--main-color);
     flex: 1;
     padding: 20px;
     background-color: #fff;
@@ -259,9 +260,8 @@ span {
 }
 
 .about-content p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.6;
-    color: #333;
 }
   
 .about-image {
@@ -284,8 +284,13 @@ span {
     position: relative;
 }
 .sobre-trabalho .title {
-    margin-bottom: 100px;
     color: white;
+}
+
+.sobre-trabalho .carousel {
+    width: 60vw;
+    margin-bottom: 100px;
+    height: auto;
 }
 
 .card-box {
@@ -294,47 +299,6 @@ span {
     justify-content: center; 
     align-items: flex-start; 
     padding: 20px;
-}
-  
-.cardd {
-    width: 400px; 
-    height: 400px;
-    margin: 0 35px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: wheat;
-    transition: ease .30s;
-}
-
-.card-box .cardd:hover {
-    scale: 1.1;
-    color: var(--bg-color);
-    box-shadow: 0 0 100px rgba(0, 0, 0, 0.425);
-}
-
-.card-circle {
-    position: absolute;
-    top: -55px;
-    left: calc(50% - 40px);
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: var(--main-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-  
-.card-circle i {
-    font-size: 20px;
-    color: white;
-}
-  
-.card-title {
-    text-align: center;
-    padding: 20px;
-    background-color: var(--main-color);
-    border-radius: 10px;
 }
   
 .card h2 {
@@ -370,32 +334,29 @@ span {
     padding: 20px;
 }
 
-.carousel-control-prev {
-  width: 30px;
-  height: 30px;
+.services .carousel-control-prev {
+
   padding: 0 5px; 
   top: 50%;
   transform: translateY(-50%);
   left: 200px;
 }
 
-.carousel-control-next {
-  width: 30px;
-  height: 30px;
+.services .carousel-control-next {
   padding: 0 5px; 
   top: 50%;
   transform: translateY(-50%);
   right: 200px;
 }
 
-.carousel button {
+.services .carousel button {
     width: 100px;
-    height: auto;
+    height: 100px;
     border-radius: 25px;
     background: var(--main-color);
 }
 
-.carousel-card-box {
+.services .carousel-card-box {
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -408,17 +369,22 @@ span {
 .site-footer {
     display: flex;
     justify-content: center;
-    align-content: center;
     background: linear-gradient(to bottom right, var(--third-color), #DE2BA1);
 }
 
 footer {
-    min-height: 100vh;
+    color: white;
+    min-height: 80vh;
     max-width: 100vw;
     padding-top: 100px;
 }
 
 .footer-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 620px;
     background-color: var(--main-color);
     border-radius: 18px;
 }
@@ -430,9 +396,29 @@ footer {
     flex-wrap: nowrap;
 }
 
+.footer-container button {
+    width: 30%;
+    height: 50px;
+    color: var(--main-color);
+    background: white;
+    border: none;
+    transition: ease .30s;
+}
+
+.footer-container button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.425);
+    background: var(--third-color);
+    border: none;
+}
+
 .footer-content {
     display: flex;
     flex-direction: column;
+}
+
+.footer-content .title {
+    text-align: center;
 }
   
 .footer-top {
@@ -445,6 +431,8 @@ footer {
 }
   
 .contact-info {
+    color: var(--main-color);
+    font-weight: bold;
     padding: 15px;
     background: white;
     border-radius: 18px;
@@ -461,18 +449,23 @@ footer {
     line-height: 1.6;
 }
 
+.footer-text span {
+    color: var(--third-color);
+}
+
 .footer-form form {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 520px;
-    height: 520px;
 }
 
 .form-group { 
     width: 50%;
     margin-bottom: 20px;
 }
+
+
 
 
 @media(max-width: 768px) {
