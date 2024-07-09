@@ -53,7 +53,10 @@ ul {
     margin-left: 25%;
     border-radius: 10px;
     background-color: var(--third-color);
-}   
+}
+.t-2 h1::after {
+    background-color: var(--main-color);
+}
 .title.active-title h1::after {
     font-weight: bold;
     display: block;
@@ -90,7 +93,7 @@ section {
 }
 
 .logo-link img {
-    width: 80%;
+    width: 100%;
     transition: ease .30s;
 }
 
@@ -113,12 +116,12 @@ section {
 .nav-list { 
     display: flex;
     list-style: none;   
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .nav-list a {
     font-family: "Montserrat Alternates", sans-serif;
-    font-size: var(--p-font);
+    font-size: 1.5rem;
     color: var(--main-color);
     padding: 10px 20px;
 }
@@ -196,12 +199,14 @@ section {
     position: relative;
 }
 
+.home-sec h1{
+    font-size: 4rem;
+}
+
 .home-sec .btn-a {
     display: flex;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     padding-top: 50px;
@@ -221,11 +226,18 @@ section {
     font-family: "Montserrat Alternates", sans-serif;
     color: white;
     margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
 }
 
 span {
     font-weight: bold;
     color: #924070;
+}
+
+.btn-a {
+    margin-top: 40px;
 }
 
 .home-text a {
@@ -267,8 +279,8 @@ span {
 }
   
 .about-image {
-    width: 40%;
-    max-width: 400px;
+    width: 70%;
+    max-width: 500px;
 }
   
 .about-image img {
@@ -325,6 +337,7 @@ span {
 .services {
     flex-direction: column;
     align-items: center;
+    padding-top: 125px;
 }
 
 .services-content {
@@ -337,7 +350,6 @@ span {
 }
 
 .services .carousel-control-prev {
-
   padding: 0 5px; 
   top: 50%;
   transform: translateY(-50%);
@@ -368,6 +380,50 @@ span {
     padding: 20px;
 }
 
+.mission {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.mission .card {
+    color: var(--main-color);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.425);
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    width: 400px;
+    height: 600px;
+}
+
+.mission .card h1{
+    font-weight: bold;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 15px;
+    border-radius: 100%;
+    background: var(--main-color);
+}
+
+.card-icon i {
+    color: white;
+}
+
 .site-footer {
     display: flex;
     justify-content: center;
@@ -393,15 +449,16 @@ footer {
 }
 
 .footer-container {
+    gap: 10px;
     max-width: 1200px;
     display: flex;
     margin: 0 auto;
     flex-wrap: nowrap;
 }
 
-textarea {
+.form-group textarea {
     resize: none;
-    width: 3000px;
+    height: 120px;
 }
 
 .footer-container button {
@@ -436,6 +493,8 @@ textarea {
 .footer-bottom {
     height: 350px;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 .contact-info {
@@ -457,11 +516,7 @@ textarea {
 }
   
   
-.footer-text {
-    width: 50%;
-    padding: 15px;
-    border-radius: 18px;
-}
+
 
 .footer-text p {
     line-height: 1.6;
